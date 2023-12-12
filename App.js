@@ -7,6 +7,13 @@ const App = () => {
 				<TextInput style={styles.input} />
 				<Button title='ADD' />
 			</View>
+			<View style={styles.listContainer}>
+				<View style={styles.cardProduct}>
+					<Text style={styles.cardTitle}>Coca-cola</Text>
+					<Text>2200 $</Text>
+					<Button title='DEL' />
+				</View>
+			</View>
 		</View>
 	)
 }
@@ -30,6 +37,16 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 10,
 		paddingVertical: 5,
 		width: 200,
+	},
+	listContainer: {
+		width: '100%',
+	},
+	cardProduct: {
+		flexDirection: 'row',
+		padding: 10,
+		margin: 10,
+		justifyContent: 'space-around',
+		borderWidth: 4,
 	},
 })
 
